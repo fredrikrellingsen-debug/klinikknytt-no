@@ -79,8 +79,8 @@ export const SITE_CONFIG: SiteConfig = {
     border: "#e2e8f0",
     headerBg: "#0f172a",
     headerInk: "#f8fafc",
-    fontHeading: "Georgia, Cambria, serif",
-    fontBody: "system-ui, -apple-system, sans-serif",
+    fontHeading: "var(--font-heading-google), Georgia, serif",
+    fontBody: "var(--font-body-google), system-ui, sans-serif",
   },
   aboutText: "Klinikknytt skriver faglige artikler og pasientveiledere om private helsetjenester i Norge, inkludert tannhelse, fysioterapi, kiropraktikk, optikk og spesialistklinikker.",
 };
