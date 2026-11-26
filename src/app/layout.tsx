@@ -35,6 +35,7 @@ const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.tri
 export const metadata: Metadata = {
   ...(googleVerification ? { verification: { google: googleVerification } } : {}),
   metadataBase: new URL(`https://${SITE_CONFIG.displayDomain}`),
+  alternates: { canonical: '/' },
   title: {
     default: `${SITE_CONFIG.siteName} – ${SITE_CONFIG.categories.slice(0, 3).join(', ')}`,
     template: `%s | ${SITE_CONFIG.siteName}`,
